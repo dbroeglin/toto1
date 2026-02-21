@@ -21,6 +21,16 @@
             <p>Dernière mise à jour : <time id="update-time"></time></p>
         </section>
 
+        <section class="search-section">
+            <label for="resort-search" class="sr-only">Rechercher une station</label>
+            <input type="search" id="resort-search" class="search-input"
+                   placeholder="Rechercher une station…" autocomplete="off">
+        </section>
+
+        <section class="map-section" id="map-section" aria-label="Carte des stations">
+            <!-- Map is rendered by js/app.js -->
+        </section>
+
         <section class="resort-grid" id="resort-grid" aria-label="Conditions météo des stations">
             <!-- Cards are rendered by js/app.js -->
         </section>
