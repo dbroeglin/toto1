@@ -69,6 +69,115 @@ main {
     margin-bottom: 1.5rem;
 }
 
+/* ===== Search ===== */
+.search-section {
+    max-width: 480px;
+    margin: 0 auto 1.5rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #d1d5db;
+    border-radius: var(--radius);
+    background: var(--color-card);
+    color: var(--color-text);
+    transition: border-color 0.2s;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.search-input::placeholder {
+    color: var(--color-muted);
+}
+
+/* ===== Map ===== */
+.map-section {
+    margin-bottom: 1.5rem;
+    background: var(--color-card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.resort-map {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+.map-bg {
+    fill: #f0f4f0;
+}
+
+.map-lake {
+    fill: #93c5fd;
+    opacity: 0.6;
+}
+
+.map-city {
+    fill: #6b7280;
+}
+
+.map-city-label {
+    font-size: 12px;
+    fill: #6b7280;
+    font-weight: 600;
+}
+
+.marker-open {
+    fill: var(--color-accent);
+    stroke: #fff;
+    stroke-width: 2;
+}
+
+.marker-closed {
+    fill: #ef4444;
+    stroke: #fff;
+    stroke-width: 2;
+}
+
+.map-label {
+    font-size: 11px;
+    fill: var(--color-text);
+    font-weight: 500;
+}
+
+.map-marker-dimmed {
+    opacity: 0.2;
+}
+
+/* ===== Hidden cards ===== */
+.resort-card.hidden {
+    display: none;
+}
+
+.no-results {
+    text-align: center;
+    color: var(--color-muted);
+    padding: 2rem;
+    font-size: 1rem;
+    grid-column: 1 / -1;
+}
+
 /* ===== Resort Grid ===== */
 .resort-grid {
     display: grid;
